@@ -10,8 +10,8 @@ const TextShow = () => {
 
     return (
         <div>
-            {text && <p>Вот текст</p>}
             <button onClick={textShow}>Показать || Скрыть</button>
+            {text && <p>Вот текст</p>}
         </div>
     )
 }

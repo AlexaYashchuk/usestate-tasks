@@ -2,9 +2,12 @@ import React from "react";
 
 class CounterClass extends React.Component {
 
-    constructor() {
-        super()
-        this.state = {count: 0} 
+    // constructor() {
+    //     super()
+    //     this.state = {count: 0} 
+    // }
+    state = {
+        count:0
     }
 
     counter = () => {

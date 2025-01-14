@@ -2,9 +2,12 @@ import React from "react";
 
 class InputClass extends React.Component {
 
-    constructor() {
-        super(),
-        this.state = {text:``}
+    // constructor() {
+    //     super(),
+    //     this.state = {text:``}
+    // }
+    state = {
+        text:``
     }
 
     input = (event) => {

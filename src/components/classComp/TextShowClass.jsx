@@ -2,9 +2,12 @@ import React from "react";
 
 class TextShowClass extends React.Component {
 
-    constructor() {
-        super(),
-        this.state = {text : true}
+    // constructor() {
+    //     super(),
+    //     this.state = {text : true}
+    // }
+    state = {
+        text: true
     }
 
     hideText = () => {

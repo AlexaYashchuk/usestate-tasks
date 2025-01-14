@@ -2,10 +2,15 @@ import React from "react";
 
 class ColorChangeClass extends React.Component {
 
-    constructor() {
-        super(),
-        this.state = {color:`black`}
+    // constructor() {
+    //     super(),
+    //     this.state = {color:`black`}
+    // }
+    state = {
+        color:`black`
     }
+
+
     //поменяется один раз 
     // colorChange = () => {
     //     this.setState({color: `red`}) 

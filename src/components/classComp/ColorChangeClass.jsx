@@ -1,5 +1,11 @@
 import React from "react";
 
+const styleColor ={
+    //color: this.state.color,
+    border: `2px solid black`,
+    backgroundColor: `green` 
+};
+
 class ColorChangeClass extends React.Component {
 
     // constructor() {
@@ -23,19 +29,11 @@ class ColorChangeClass extends React.Component {
         }));
     }
 
-    render() {
-
-        const styleColor ={
-            color: this.state.color,
-            border: `2px solid black`,
-            backgroundColor: `green` 
-        };
-
-        
+    render() {       
         return(
             <div>
             <button onClick={this.colorChange}>Поменять цвет</button>
-            <p style={styleColor}>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p style={{ ...styleColor, color: this.state.color }}>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         )
     }
